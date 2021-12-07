@@ -1,0 +1,223 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1090;
+  padding: 15px 0;
+  transition: all 0.5s;
+  background: $white;
+
+  &.fixdHeader {
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    .navbar {
+      .logo {
+        a {
+          img {
+            max-width: 150px;
+          }
+        }
+      }
+
+      .mainMenu {
+        ul {
+
+          .nav-item {
+
+            .nav-link {
+
+              &.active {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+    .logo {
+      a {
+        img {
+          transition: all 0.5s;
+          max-width: 180px;
+          width: 100%;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      outline: none;
+      box-shadow: none;
+
+      .bar_icon {
+        width: 30px;
+        height: 16px;
+        position: relative;
+        display: inline-block;
+
+        .bar {
+          position: absolute;
+          width: 100%;
+          background: $dark;
+          height: 2px;
+          left: 0;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+
+          &.bar_1 {
+            top: 0;
+          }
+
+          &.bar_2 {
+            top: 50%;
+          }
+
+          &.bar_3 {
+            top: 100%;
+          }
+        }
+      }
+
+      &[aria-expanded="true"] {
+        .bar {
+          &.bar_1 {
+            top: 50%;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          &.bar_2 {
+            opacity: 0;
+          }
+
+          &.bar_3 {
+            top: 50%;
+            -webkit-transform: rotate(-45deg) translateY(-50%);
+            -ms-transform: rotate(-45deg) translateY(-50%);
+            transform: rotate(-45deg) translateY(-50%);
+          }
+        }
+      }
+    }
+
+
+    .mainMenu {
+      ul {
+        align-items: center;
+
+        .nav-item {
+          margin-right: 30px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .nav-link {
+            color: $dark;
+            font-size: $f14;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: $Saira;
+            padding: 0;
+            position: relative;
+            letter-spacing: 0.5px;
+            display: inline-block;
+
+            &:before {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              right: 0;
+              width: 0;
+              height: 1px;
+              background: $brand;
+              transition: all 0.5s;
+              opacity: 0;
+              z-index: 1;
+            }
+
+            &.active,
+            &:hover {
+              color: $brand;
+
+              &:before {
+                width: 100%;
+                left: 0;
+                right: auto;
+                //opacity: 1;
+              }
+            }
+
+          }
+
+          &.callNow {
+            margin-left: 10px;
+
+            .nav-link {
+              .callImg {
+                img {
+                  max-width: 150px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          &.loginBtn {
+            .nav-link {
+              text-transform: capitalize;
+              color: $white;
+              background: $brand;
+              border-radius: 50px;
+              padding: 7px 30px;
+              transition: all 0.5s;
+
+              &:hover {
+                box-shadow: 0px 8px 20px #ff660069;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .header .navbar .logo a img {
+    max-width: 170px;
+  }
+  .header.fixdHeader .navbar .logo a img {
+    max-width: 150px;
+  }
+  .header .navbar .mainMenu ul .nav-item {
+    margin-right: 20px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+
+  .header .navbar .mainMenu ul {
+    padding-top: 20px;
+    display: block;
+  }
+  .header .navbar .mainMenu ul .nav-item {
+    margin: 0 0 15px;
+  }
+  .header .navbar .mainMenu ul .nav-item.callNow {
+    margin: 0 0 20px;
+  }
+}
+

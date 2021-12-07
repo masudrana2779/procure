@@ -1,0 +1,68 @@
+.whatWeWrap {
+  padding: 110px 0;
+}
+
+.whatWeContent {
+  padding-right: 50px;
+  .secTitle {
+    margin-bottom: 10px;
+  }
+
+  .whatWePara {
+    margin-bottom: 50px;
+  }
+}
+
+.PartsAccordionContent {
+  .accordion {
+    .accordion-item {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: none;
+
+      .accordion-header {
+        border: none;
+
+        .accordion-button {
+          background: transparent;
+          box-shadow: none;
+          color: $dark;
+          font-size: $f20;
+          font-weight: 600;
+          &:after {
+            content: "\f067";
+            font-family: 'fontawesome';
+            background: none;
+            transform: none;
+            font-size: 14px;
+          }
+          &[aria-expanded="true"]{
+            color: $brand;
+            &:after {
+              content: "\f068";
+            }
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          p {
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .whatWeWrap {
+    padding: 50px 0;
+  }
+  .whatWeContent {
+    padding: 0;
+  }
+}

@@ -1,0 +1,82 @@
+.railRoadWrap {
+
+}
+
+.railRoadImgDetails {
+  .detailsInnerSingleItem {
+    padding-bottom: 20px;
+  }
+
+  .detailsInner {
+    h4 {
+      margin-bottom: 5px;
+    }
+    h5 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.railroadTabs {
+  margin-bottom: 30px;
+
+  .nav {
+
+    .nav-item {
+
+      .nav-link {
+      border: none;
+        color: $dark;
+        &.active {
+          background: $brand;
+          border: none;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.railRoadImg {
+  border: 1px solid #eee;
+}
+
+.railRoadImgDetails {
+  padding: 0 50px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.PartsContent {
+  p {
+    margin-bottom: 20px;
+  }
+
+}
+.detailsInner {
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.PartsAccordionContent {
+  .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    overflow: hidden;
+  }
+  .accordion-button {
+    color: $brand;
+    background-color: #fff7f4;
+    box-shadow: none;
+  }
+}
