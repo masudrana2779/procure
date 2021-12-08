@@ -163,6 +163,42 @@
             margin-left: 10px;
 
             .nav-link {
+
+
+              .cusCall {
+                .cusInner {
+                  display: flex;
+                  align-items: center;
+
+                  .cusIcon {
+                    img {
+                      max-width: 38px;
+                      width: 100%;
+                    }
+                  }
+
+                  .cusInfo {
+                    padding-left: 10px;
+
+                    .callT {
+                      color: #a19b98;
+                      font-weight: 600;
+                      font-size: 10px;
+                      display: block;
+                      line-height: 12px;
+                    }
+
+                    .callNo {
+                      display: block;
+                      font-size: 16px;
+                      color: #464242;
+                      font-weight: 600;
+                      line-height: 20px;
+                    }
+                  }
+                }
+              }
+
               .callImg {
                 img {
                   max-width: 150px;
@@ -204,7 +240,6 @@
     margin-right: 20px;
   }
 }
-
 
 
 @media (max-width: 767px) {

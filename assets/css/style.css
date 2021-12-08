@@ -3,7 +3,7 @@
 @File: Default Styles
 
 /*=====================================================================
-@Template Name: Dhaleshwari Consultant
+@Template Name: Procure Mate
 @Author: Masud Rana
 @Developed By: Masud Rana
 @Developer URL: https://www.linkedin.com/in/masudrana2779/
@@ -284,6 +284,30 @@ button:focus {
               right: auto; }
         .header .navbar .mainMenu ul .nav-item.callNow {
           margin-left: 10px; }
+          .header .navbar .mainMenu ul .nav-item.callNow .nav-link .cusCall .cusInner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .header .navbar .mainMenu ul .nav-item.callNow .nav-link .cusCall .cusInner .cusIcon img {
+              max-width: 38px;
+              width: 100%; }
+            .header .navbar .mainMenu ul .nav-item.callNow .nav-link .cusCall .cusInner .cusInfo {
+              padding-left: 10px; }
+              .header .navbar .mainMenu ul .nav-item.callNow .nav-link .cusCall .cusInner .cusInfo .callT {
+                color: #a19b98;
+                font-weight: 600;
+                font-size: 10px;
+                display: block;
+                line-height: 12px; }
+              .header .navbar .mainMenu ul .nav-item.callNow .nav-link .cusCall .cusInner .cusInfo .callNo {
+                display: block;
+                font-size: 16px;
+                color: #464242;
+                font-weight: 600;
+                line-height: 20px; }
           .header .navbar .mainMenu ul .nav-item.callNow .nav-link .callImg img {
             max-width: 150px;
             width: 100%; }
