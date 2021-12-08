@@ -194,6 +194,8 @@ button:focus {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   background: #fff; }
+  .header.hideMenu {
+    top: -60px; }
   .header.fixdHeader {
     padding: 10px 0;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);

@@ -39,6 +39,18 @@
         headerFixed();
 
 
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").classList.remove('hideMenu');
+            } else {
+                document.getElementById("navbar").classList.add('hideMenu');
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+
 
         $(window).on('scroll', function () {
             var $scTop = $(window).scrollTop();
